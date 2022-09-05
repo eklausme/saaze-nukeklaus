@@ -1,0 +1,65 @@
+---
+date: "2018-06-22 12:00:00"
+title: "Die Robustheit eines Stromnetzes"
+categories: ["Netze"]
+tags: ["Energieabhaengigkeit", "Energiewende", "Gebietsmonopol", "Greenpeace", "Grosse-transformation", "Klimaschutz", "Performance", "Resilience", "Smart-grid", "Smart-meter", "Speicher", "Src", "Stromabfall", "Stromboerse", "Stromkosten", "Strommarktliberalisierung", "Stromversorgung", "Subventionen", "Vollbenutzungsstunden"]
+---
+
+In den USA hat die ideologisch bedingte („Klimakatastrophe“) Subventionierung von Wind- und Sonnenkraftwerken zu ähnlichen Problemen wie in Deutschland geführt: Immer mehr konventionelle Kraftwerke arbeiten mit Verlusten und drohen deshalb mit Schließung. Präsident Trump hat versucht dem mit verschiedenen Erlassen entgegen zu wirken. Inzwischen gibt es in verschiedenen Bundesstaaten ebenfalls konkrete Maßnahmen, insbesondere um die Schließung von Kernkraftwerken zu verhindern. Es hat der bekannte planwirtschaftliche Teufelskreis eingesetzt: Die Verzerrung des Marktes durch Subventionen wird mit weiteren Subventionen an anderer Stelle bekämpft. Das Ergebnis sind allgemein steigende Kosten, die zu überhöhten Preisen und letztendlich zum Schaden der Gesellschaft wirken.
+
+
+## Das neue Modewort „_Resilience_“
+
+Der Begriff „Resilience“ kommt eigentlich aus den Gesellschaftswissenschaften. Man versteht darunter die Fähigkeit eines technischen Systems oder einer Gesellschaft Veränderungen oder zerstörerischen Ereignissen zu widerstehen, indem es die negativen Einflüsse dämpft (absorptive capability), sich selbst verändert und anpasst (adaptive capability) oder letztendlich durch eine Wiederherstellung (restorative capability). Es wird deshalb hier das Wort „Robustheit“ als Übertragung ins Deutsche verwendet.
+
+Um dem ganzen einen wissenschaftlichen Anstrich zu verleihen, wird gern ein Bild gezeichnet, welches als „System Resilience Curve (SRC)“ bezeichnet wird. Darunter versteht man die bauchige Kurve der „___Performance___“ über der Zeit. Dem gewöhnlichen Ingenieur sei dringend empfohlen, sich mit diesem neuen Wieselwort vertraut zu machen, da es nur eine Frage der Zeit sein kann, bis es zum Standardrepertoire eines jeden Dampfplauderers gehört. Es werden üblicherweise vier Phasen definiert:
+
+
+1. Zum Zeitpunkt t<sub>1</sub> tritt eine Störung auf. Bis zum Zeitpunkt t<sub>2</sub> kämpft das System mit dieser Störung. Man bezeichnet diese Phase noch als Normalbetrieb, solange die Auswirkungen auf die „Performance“ noch im Rahmen der Toleranzen bleiben.
+1. Zum Zeitpunkt t<sub>2</sub> beginnt der teilweise Zusammenbruch des Systems. Gegenmaßnahmen zur Stabilisierung werden ergriffen und die „Performance“ erreicht zum Zeitpunkt t<sub>4</sub> ihren Tiefpunkt.
+1. Ab dem Zeitpunkt t<sub>4</sub> beginnt die Wiederherstellung des Systems im Notbetrieb, die zum Zeitpunkt t<sub>5</sub> abgeschlossen ist. Die „Performance“ erreicht aber nicht wieder den Wert im Normalbetrieb.
+1. Ab dem Zeitpunkt t<sub>4</sub> beginnt die Reparaturphase bis zum Zeitpunkt t<sub>5</sub> an dem ein neuer Normalbetrieb erreicht wird.
+
+So theoretisch, so schön und gut. Nur, dem Techniker dürstet es immer nach konkreten Zahlenwerten und genauen Definitionen. Mit Geschwurbel kann man zwar in den Gesellschaftswissenschaften hervorragend Geld und Anerkennung verdienen, aber in der realen Welt bringt man damit keine Maschine zum Laufen — geschweige ein so komplexes System wie ein Stromnetz. Zumal Experimente nur sehr eingeschränkt möglich sind: Es wären Operationen am „offenen Herzen einer Gesellschaft“.
+
+
+## Was bitte, ist die <a id="MMDHTMLSCROLLPOINT"></a>.„Performance“ eines Stromnetzes?
+
+In einer Marktwirtschaft sollte man immer zuerst nach den Anforderungen der Kunden fragen. Der Kunde — das sind wir alle selbst — will zu jedem Zeitpunkt, an jeder Steckdose, seine georderte Leistung haben. Er will selbst und frei entscheiden, wann er das Licht oder seinen Computer einschaltet oder was sonst er mit elektrischer Energie alles machen will. Für uns seit Jahrzehnten eine Selbstverständlichkeit. Vielleicht zu selbstverständlich, als das wir die heraufziehenden Gefahren „_Der-schönen-neuen-Welt_“ des Öko-Sozialismus noch wahrnehmen.
+
+Wir sollen uns an einen Systemwechsel gewöhnen: Zukünftig geht es nicht mehr um die Interessen der Kunden, sondern ausschließlich um die Interessen der Lieferanten. Aus dem Kunden wird ein lästiger „Strom-Bittsteller“, dessen einzige Aufgabe noch darin besteht, mit seiner ständig steigenden Stromrechnung diejenigen zu mästen, die besonders gut und gerne von diesem Land leben — die Sonnen- und Windbarone.
+
+In der guten alten Zeit, in der noch die ___Energieversorgung___ im Vordergrund stand, war die Aufgabenstellung einfach und klar definiert: Priorität hatte stets die Stabilität des Netzes. Auch die Verantwortung war über die ___Gebietsmonopole___ eindeutig geregelt. Jeder Versorger hatte von der Erzeugung (Kraftwerke) über den Transport (Netz) bis zur Abrechnung (Zähler usw.) alles bereitzustellen. __Robustheit__ war so selbstverständlich, daß niemand darüber reden mußte. Die Bewertung der __Performance__ war einfach: Wie oft und für wie lange ist die Stromversorgung in einem Gebiet ausgefallen?
+
+
+## Alles eine Frage der Verantwortlichkeit
+
+Ein klassisches Energieversorgungs-Unternehmen mußte selbst entscheiden, in welchen Kraftwerkspark (Kohle-, Kernkraft-, Gaskraftwerke etc.) in welcher Zusammensetzung (Optimierung der Erzeugungskosten) es investierte. Welche Kraftwerke es in Betrieb hatte, welche in Reserve, wann Wartungsarbeiten, wann Modernisierungen etc. durchgeführt wurden. In der Praxis oft schwierig zu beantwortende Fragen, aber durch entsprechend große Stäbe an Ingenieuren handhabbar. Ein über alle Kulturkreise und sogar Gesellschaftssysteme erfolgreiches Modell.
+
+Eine alte Volksweisheit besagt: Wenn es dem Esel zu wohl geht, geht er aufs Eis tanzen. Die „Große Transformation“ zurück ins Mittelalter ward erschaffen: Plötzlich wurde die Technik zwangsweise durch die vom Menschen nicht bestimmbare Kraft des Wetters ersetzt. Absurderweise auch noch mit der Begründung, genau diese Naturgewalt dadurch beeinflussen zu können und zu müssen („Klimakatastrophe“). Da kein Energieversorgungsunternehmen so blöd war, sich weiterhin für ein robustes Stromnetz verantwortlich machen zu lassen, aber die Stellhebel ausschließlich dem „Wettergott“ zu überlassen (100% Wind und Sonne), mußte die „___Strommarktliberalisierung___“ erschaffen werden. Eine herrliche Wortschöpfung um den verbrannten Begriff „Planwirtschaft“ zu vermeiden. Die Vorgehensweise ist und bleibt immer gleich: Zerschlage erstmal das funktionierende System und bilde möglichst viele Einheiten (Energieerzeugung, Netzgesellschaft etc.) mit möglichst gegensätzlichen und unterschiedlichen Interessen — auch als Teile und Herrsche bekannt. Damit die Sache beschleunigt wird, sorge für möglichst viele „Schlangenölverkäufer“ (EE-Gesetz) und Agitprop-Einheiten (Greenpeace, Klimainstitute usw.). [Einschub: Warum fällt mir an dieser Stelle bloß eine Paraderolle mit Mario Adorf ein: Ich sch… dich zu mit Geld.] In diesem Punkt unterscheidet sich der „Öko-Sozialismus“ von seinen eher armen Vorgängern. Man hat in diesem (noch) erfolgreichen System einfach mehr Geld anderer Leute — auch Steuern und Abgaben genannt — zur Verfügung.
+
+
+## Wofür dient die SRC wirklich?
+
+Bisher hat man einfach den Bedarf gedeckt. Störungen für das Stromnetz haben sich aus technischen Fehlern (Kraftwerk, Trafo etc.), aus höherer Gewalt (Bagger) und zum geringeren Maße durch das Wetter (Sturm, Vereisung, Blitzschlag etc.) ergeben. Alles sehr gut beherrschbar, weil man stets selbst die Hoheit über die Produktion und Verteilung besessen hat. Man hat sich fast immer und ausschließlich in der ersten Phase des Normalbetriebes bewegt. Die Öffentlichkeit hat meist nichts von etwaigen Schwierigkeiten mitbekommen. Stromausfällen gab es — wenn überhaupt — nur lokal und kurzfristig.
+
+Nun hat man — nicht aus Not, sondern nur aus ideologischen Gründen — die Erzeugung in die Hand des „Wettergottes“ übergeben. Dort geht aber die Bandbreite der Stromproduktion von nahezu Null (Dunkelflaute) bis zur maximalen installierten Leistung, die manchmal höher als der Gesamtbedarf sein kann. Mit zunehmendem Ausbau in Europa werden die notwendigen Abschaltungen immer weiter zunehmen. Wirtschaftlich eine sich selbst verstärkende Katastrophe. Mit jeder notwendigen Zwangsabschaltung wird die — ohnehin geringe — Arbeitsausnutzung (Strommenge, die die entsprechenden Anlagen pro Jahr produzieren) geringer und die Kosten der erzeugten Kilowattstunden steigen dadurch entsprechend an. Noch einmal in einem kurzen Merksatz zusammengefaßt: __Je mehr Windmühlen und Sonnenkollektoren in Betrieb gehen, um so teurer werden die damit erzeugten Kilowattstunden__! Ganz im Gegensatz zur geltenden Propaganda, die von immer weiter sinkenden Preisen faselt. Jeder Investor, der sich heute noch mit dem Gedanken trägt in Wind und Sonne zu gehen, sollte diesen Zusammenhang beherzigen. Ist der Redeschwall und die Zahlenakrobatik der Schlangenölverkäufer auch noch so verführerisch.
+
+In diesem Zusammenhang ist die Einbeziehung des Wirtschaftsraumes Europa nicht zu vernachlässigen. Je weiter auch dort der Ausbau von „regenerativen Energien“ fortschreitet, um so mehr werden die Entsorgungsgebühren (negative Strompreise an den Börsen) ansteigen. __Die von den Stromkunden in Deutschland bezahlten Entsorgungsgebühren machen die Preise für den Windstrom in unseren Nachbarländern immer weiter kaputt und erhöhen damit die dort fälligen Subventionen__. Auch das, eine weitere Todesspirale für die „regenerativen Energien“. Die alte Propagandalüge „_irgendwo-weht immer-der Wind_“ ist längst als solche enttarnt. Was Meteorologen schon immer wußten, daß Großwetterlagen nicht an den nationalen Grenzen halt machen, ist heute bereits in den Übertragungsnetzen meßbar: Die Produktion von Windenergie in den zentraleuropäischen Staaten verläuft bemerkenswert synchron.
+
+Wenn also der Wettergott die Produktion übernimmt, muß man von tagelangen und großräumigen Flauten ausgehen. Speicher in dieser Größe gibt es nicht. Wenn man zudem in der kurzen Zeit, in der der Wind genug weht und die Sonne scheint (Arbeitsausnutzung &lt;15% in der Summe beider), nicht nur die aktuelle Nachfrage abdecken muß, sondern auch noch die zu speichernde Energie einschließlich der Verluste (mindestens 50%) produzieren muß, benötigt man gigantische installierte Leistungen. Dabei muß man auch noch beachten, daß die Vollbenutzungsstunden der Wandlungsanlagen (Batterien, Power to Gas oder was auch immer) und Übertragungsnetze ebenfalls sehr gering ausfallen müssen (Produktion minus Nachfrage), was bei den ohnehin sehr hohen Investitionskosten für Speicher- und Übertragungssysteme zu gigantischen spezifischen Kapitalkosten (€/kWh) führt.
+
+
+## Die Antwort liegt in Phase 2 der SRC
+
+Jeder Fachmann weiß, daß bei immer weniger konventionellen Kraftwerken am Netz, zukünftig der Punkt 2 der SRC-Kurve immer häufiger zu dem Ergebnis führt, daß Störungen eben nicht mehr ausgeregelt werden können. __Störungen sind zukünftig nicht mehr nur technische Fehler im System, sondern vielmehr auch noch die Launen des Wettergottes__. Wenn erst einmal kein „_Kohlestrom mehr die Netze verstopft_“ und die Kernkraftwerke abgeschaltet sind, bleibt nur noch der Abwurf von Verbrauchern. Dieser muß in Sekundenschnelle erfolgen, sonst bricht — gemäß den Kirchhoffschen Regeln — das gesamte Netz großflächig (Europaweit?) zusammen.
+
+Unsere Fachpersonen an den Schaltstellen der großen Transformation haben natürlich auch darauf eine Antwort: Man schwadroniert vom „__Smart Grid__“ und von „__Smart Metering__“. Dahinter verbirgt sich nichts anderes, als der elektronische Bezugsschein der Mangelwirtschaft. Auch die fanatischsten „Transformatoren“ sehen durchaus das Problem von großflächigen Stromabschaltungen. Deshalb wollen sie gemäß Dringlichkeit abstellen. Wer im Dunkeln sitzen muß, entscheidet wohl der örtliche Parteisekretär oder schlicht der Geldbeutel. Der dumme Michel wird schon zahlen, wenn er unbedingt die Sportschau sehen will oder sein Gefriergut retten muß. In Afrika überleben die Menschen schließlich auch irgendwie.
+
+Wenn nun der Wind wieder richtig weht und der Tag nach einer langen Winternacht anbricht, kann man langsam in die Phase 3 übergehen. Es ist nämlich gar nicht so einfach ein Netz wieder zu stabilisieren. Man kann dann schrittweise die Notstromaggregate in den Krankenhäusern, Unternehmen usw. abstellen und die Verbraucher wieder aufs Netz schalten. Wie die „__Performance__“ aussieht, wird sich zeigen. Als letztes kommt dann mit Phase 4 die Beseitigung der entstandenen Schäden im Netz.
+
+
+## Ausblick
+
+Der nächste Artikel wird sich mit den Konsequenzen für die Kernkraftwerke in dieser neuen Welt befassen. Mit Sicherheit wird es noch eine jahrelange Übergangszeit geben, bis man mit dem Spuk der „Regenerativen Energien“ wieder Schluß macht. Es gilt diese Zeit möglichst elegant aus zu sitzen.
+

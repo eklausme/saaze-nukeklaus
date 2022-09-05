@@ -1,0 +1,28 @@
+#!/bin/perl -W
+# Process `require` in PHP template files
+# Special handling for blognukeklaus.css to suppress @media screen queries
+# Elmar Klausmeier, 03-Sep-2022
+
+use strict;
+
+while (<>) {
+	if (/ require SAAZE_PATH . "([\.\w\/]+)"/) {
+		my $fn = $1;
+		open(F,"<$ENV{'SAAZEROOT'}$fn") || die("Cannot open $ENV{'SAAZEROOT'}$fn");
+		if ($fn =~ /blognukeklaus\.css$/) {
+			my $flag = 0;
+			while (<F>) {	# process CSS + ignore some @media queries
+				$flag = 1 if (/^\@media screen/);
+				print if ($flag == 0);
+				$flag = 0 if (/^}/);
+			}
+		} else {
+			print <F>;	# slurp file unchanged
+		}
+		close(F) || die("Cannot close $fn");
+	} else {
+		print;
+	}
+}
+
+

@@ -1,0 +1,29 @@
+#!/bin/bash
+# Deploy nukeklaus's blog: build directory is in /tmp/build (for speed reasons)
+# Elmar Klausmeier, 22-Jul-2022
+# Elmar Klausmeier, 03-Sep-2022: incorporated blognukeklausRequire
+
+export SAAZEROOT=/home/klm/php/saaze-nukeklaus
+DOCROOT=/srv/http/nukeklaus
+CDIRS="nukeklaus"
+
+errorExit() {
+	echo $1
+	exit 1
+}
+
+[ -d $DOCROOT ] && rm -rf $DOCROOT
+[ -d /tmp/build ] || errorExit "No build directory in /tmp"
+mv /tmp/build $DOCROOT
+
+cat	\
+	<(echo "<?php \$title='Search'; \$url='/nukeklaus/search.php'; \$rbase='/nukeklaus'; \$cdirs='$CDIRS'; ?>")	\
+	<( blognukeklausRequire $SAAZEROOT/templates/top-layout.php )	\
+	$SAAZEROOT/content/aux/search.php	\
+	$SAAZEROOT/templates/bottom-layout.php	\
+	| tee $SAAZEROOT/public/search.php > $DOCROOT/search.php
+
+cd $DOCROOT
+ln -s $SAAZEROOT/public/img
+
+

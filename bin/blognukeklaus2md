@@ -1,0 +1,123 @@
+#!/bin/perl -w
+# Convert nukeklaus HTML files to Markdown with frontmatter
+# Elmar Klausmeier, 17-Jul-2022
+# Elmar Klausmeier, 20-Aug-2022, keep one single empty line
+
+use strict;
+my ($content,$liChr,$doubleEmpty) = (0,'',0);
+
+print "---\n";
+printf("date: \"%s 12:00:00\"\n", substr($ARGV[0],0,10));
+while (<>) {
+	if (/<title>(.+?) &#8211; nukeKlaus.net<\/title>/) {
+		print "title: \"$1\"\n";
+	} elsif (/^<article id=.+? category-(.+?)(| .+)">$/) {	# normal post
+		my ($cat,$rest,$flag) = ($1,$2,0);
+		printf("categories: [\"%s\"", ucfirst $cat);
+		while ($rest =~ /(category|tag)-([^ ]+)/g) {
+			my $tag = "$1-$2";
+			#print "\ntag: $tag\n";
+			if ($tag =~ /^category-/) {
+				printf(", \"%s\"", ucfirst substr($tag,9));
+			} elsif ($tag =~ /^tag-/) {
+				if ($flag++ == 0) {
+					printf("]\ntags: [\"%s\"", ucfirst substr($tag,4));
+				} else {
+					printf("%s\"%s\"", $flag>1?", ":"", ucfirst substr($tag,4));
+				}
+			}
+		}
+		print "]\n---\n\n";
+	} elsif (/^<article id=.+? .+? hentry">$/) {	# WordPress separate page
+		print "---\n\n";
+	} elsif (/<\/div><!-- \.entry-content -->/) {
+		$content = 0;
+	} elsif (/<div class="entry-content">/) {
+		$content = 1;
+	} elsif ($content) {
+		# Simple heuristics to convert HTML to Markdown
+		chomp;
+		s/\s+$//;	# rtrim
+		if (length($_) == 0) {
+			if ($doubleEmpty++ == 0) { print "\n"; }	# print first empty line
+			next;	# skip all other empty lines
+		}
+		$doubleEmpty = 0;
+
+		# Special case for 2017-03-24-gray-sievert-und-was-sonst-noch
+		if (/<p style="padding-left: 30px;"><span style="color: #ff6600;">(.+)<\/span><\/p>(.*)/) {
+			my ($special,$rest) = ($1,$2);
+			print '<p style="padding-left: 30px;"><span style="color: #ff6600;">' . $special . "</strong></span></p>\n";
+			$_ = $rest;
+		}
+		s/<strong>w<sub>R <\/sub><\/strong>erzeugt/__w<sub>R<\/sub>__ erzeugt/;
+
+		# Cleanup
+		s/<p><span style="font-size: 23px; font-weight: 900;">(.+)<\/span><\/p>/\n### $1\n/;	# should have been <h3>
+		s/<a>\.<\/a>//g;	# in 2019-06-24-key-information-file-kif-ein-neuer-gag
+		s/<p>\x1b//g;	# 2015-12-02-3-d-drucker-und-die-bombr
+		if (/The Nuclear Scare Scam \| Galen Winsor/) {	# 2013-07-31-seltene-filmschaetze
+			$_ = "[The Nuclear Scare Scam | Galen Winsor](https://www.youtube.com/watch?v=ROAO1saHEvs)\n\n[youtube] ROAO1saHEvs [/youtube]\n";
+		}
+		s/Fast man nun die Pl/Fasst man nun die Pl/;	# 2022-07-06-kann-die-ukraine-deutschland-retten
+
+		s/^\s*<p>//;
+		s/<\/p>$/\n/;
+		s/<h1(.*?)>(.+)<\/h1>/\n# $2\n/;
+		s/<h2(.*?)>(.+)<\/h2>/\n## $2\n/;
+		s/<h3(.*?)>(.+)<\/h3>/\n### $2\n/;
+		s/<h4(.*?)>(.+)<\/h4>/\n#### $2\n/;
+		s/<h5(.*?)>(.+)<\/h5>/\n##### $2\n/;
+		s/<strong>\.<\/strong>/./g;	# special case for 2017-08-20-das-trumpsche-energiezeitalter
+		#s/\.<strong> /. __/g;	# special case for 2017-02-13-das-nationale-begleitgremium-stellt-sich-vor
+		s/<strong> / __/g;	# special case for 2017-02-13-das-nationale-begleitgremium-stellt-sich-vor
+		s/(\s+|\xc2\xa0)<\/strong>/__ /g;	# special case for 2019-03-15-rueckbau-kerntechnischer-anlagen
+		s/<strong>/__/g;
+		s/<\/strong>/__/g;
+		s/<em>/_/g;
+		s/<\/em>/_/g;
+
+		#s/<ol>/<ol>\n/g;
+		#s/<\/ol>/<\/ol>\n/g;
+		#s/<\/li>/<\/li>\n/g;
+
+		# <ol> or <ul> arrive on single line
+		if (/<ul><li>/) {
+			s/<ul>/\n/g;
+			s/<\/ul>/\n/g;
+			s/<li>/* /g;
+			s/<\/li>/\n/g;
+		} elsif (/<ol><li>/) {
+			s/<ol>/\n/g;
+			s/<\/ol>/\n/g;
+			s/<li>/* /g;
+			s/<\/li>/\n/g;
+		}
+		# <ol> or <ul> arrive on individual lines
+		if (/<ol>/) {
+			$liChr = '1. ';
+			s/<ol>//;
+		} elsif (/<ul>/) {
+			$liChr = '* ';
+			s/<ul>//;
+		}
+		s/<\/(o|u)l>//;
+		s/<li>/${liChr}/g;
+		s/<\/li>//;
+
+		s/<blockquote><p>/> /;
+		s/<\/p><\/blockquote>/\n/;
+
+		#s/<a href="http:\/\/www\.nukeklaus\.net\/(\d\d\d\d)\/(\d\d)\/(\d\d)\/(.+?)">(.+?)<\/a>/[$5](..\/$1-$2-$3-$4)/g;
+		while (/<a href="http:\/\/www\.nukeklaus\.net\/(\d\d\d\d)\/(\d\d)\/(\d\d)\/(.+?)">(.+?)<\/a>/g) {
+			my ($year,$month,$day,$slug,$linktxt) = ($1,$2,$3,$4,$5);
+			$slug =~ s/\/adminklaus\///;
+			$slug =~ s/" .+//;
+			s/<a href="http:\/\/www\.nukeklaus\.net\/(\d\d\d\d)\/(\d\d)\/(\d\d)\/(.+?)">(.+?)<\/a>/[${linktxt}](..\/${year}-${month}-${day}-${slug})/;
+		}
+
+		print "$_\n";
+	}
+}
+
+

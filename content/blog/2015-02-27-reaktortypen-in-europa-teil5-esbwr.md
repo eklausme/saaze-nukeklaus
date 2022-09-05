@@ -1,0 +1,100 @@
+---
+date: "2015-02-27 12:00:00"
+title: "Reaktortypen in Europa – Teil5, ESBWR"
+categories: ["Siedewasserreaktor"]
+tags: ["Abwr", "Brennelemente", "Diversitaet", "Eccs", "Erdbeben", "Esbwr", "Eva", "Generation-iv", "Hyman-g-rickover", "Nachzerfallswaerme", "Naturumlauf", "Neutronenphysik", "Notkuehlung", "Passive-sicherheit", "Reaktordruckgefaess", "Redundanz", "Regelstaebe", "Schnellabschaltung", "Simulation", "Speisewasser", "Stoerfall", "Strahlenbelastung", "Strahlenschutz", "Thermohydraulik", "Tsunami", "Wirkungsgrad"]
+---
+
+Der ESBWR (Economic Simplified Boiling Water Reactor) ist die bisherige Krönung in der Evolution der Leichtwasserreaktoren. Es ist ein Reaktor der Generation III+ und erfüllt sicherheitstechnisch bereits die Ziele der vierten Generation: Passive und inhärente Sicherheit, die die Anlage stets selbstständig in einen sicheren Zustand überführt.
+
+
+## Geschichte
+
+Bereits nach dem Reaktorunglück von TMI in Harrisburg begann man in den USA das Genehmigungsverfahren für einen stark vereinfachten Reaktor, den SBWR (Simplified Boiling Water Reactor). Nachdem man über eine halbe Milliarde Dollar Entwicklungs- und Genehmigungskosten investiert hatte, mußte man erkennen, daß dieser Reaktor mit 670 MWel schlicht zu klein und damit unverkäuflich war. Im nächsten Schritt legte man mehr Wert auf die „Wirtschaftlichkeit (Economic)“ und erhöhte die Leistung auf 1600 MWel. Ein weiteres Jahrzehnt mit unzähligen Prüfungen verging. Seit letztem Jahr liegen endlich alle Genehmigungen für den Typ vor. Es fehlt nur noch ein Kunde mit einem konkreten Bauauftrag. Inzwischen gibt es auch dazu Verhandlungen in USA, Polen und Indien. Wie immer, wird der „mutige Investor“ gesucht, der bereit ist in eine neue Technik (first of a kind) zu investieren. Dabei ist die Technik alles andere als revolutionär, sondern im Gegenteil strikt evolutionär. Man hat Schritt für Schritt auf in der Praxis bewährte Bauteile zurückgegriffen. Dies sei nur am Rande bemerkt, für all die Erfinder, die immer nach revolutionären Konzepten schreien. Erfinden und in allen Details den Nachweis der Funktionstüchtigkeit erbringen, sind zwei völlig verschiedene Dinge. Zumindest der Nachweis der Funktionstüchtigkeit – nach den Maßstäben der Kerntechnik – erfordert Jahrzehnte und verschlingt somit immense Summen. Vergleichbares gibt es nur in der zivilen Luftfahrt. Auch dort sind revolutionäre Flugzeugentwürfe nur etwas für Universitäten und Medien.
+
+
+## Anforderungen
+
+Alle bisherigen Erfahrungen mit Kernkraftwerken – insbesondere die Unglücke in Harrisburg, Tschernobyl und Fukushima – haben zu folgenden Anforderungen für einen sicheren und wirtschaftlichen Betrieb geführt:
+
+
+* __Je weniger Bauteile__ man hat, je weniger kann kaputt gehen (Schaden) und je weniger muß gewartet und überwacht werden (Wirtschaftlichkeit).
+* __Je einfacher__ („_kiss = keep it simple stupid_“) das Kraftwerk ist, je einfacher ist es auch zu bedienen – dies gilt für die Automatik, wie auch für das Personal.
+* Je mehr man auf __Naturkräfte__ (Schwerkraft, Speicherung etc.) bei der Sicherheitstechnik setzt, um so sicherer ist ihre Verfügbarkeit im Ernstfall.
+* __Je unabhängiger__ man von äußeren Einflüssen ist (Netzanschluss, Kühlwasser etc.), je weniger können solche „_Einwirkungen von außen_“ (Tsunami, Wirbelsturm, aber auch Flugzeugabsturz, Terror etc.) zu Schäden beim Kraftwerk führen.
+* __Je passiver__ die Sicherheitsketten sind, je weniger muß man sich auf eine hohe Bereitschaft des Schichtpersonals verlassen. Gerade in Ausnahmesituationen (Erdbeben mit Tsunami) brauchen Menschen Zeit sich darauf umzustellen.
+* Wenn man bewußt von dem __Versagen aller Sicherheitssysteme__ ausgeht und offensiv solche Ereignisse durchspielt, kann man trotzdem die Schäden für die Umwelt noch weiter mindern.
+
+Nur die konsequente Umsetzung der vorausgehenden Punkte hat zu der gewaltigen Steigerung der Sicherheit beim ESBWR geführt. Hatte die „Fukushima-Generation“ noch eine Wahrscheinlichkeit von einer Kernschmelze in 100.000 Betriebsjahren, so liegt diese Wahrscheinlichkeit beim ESBWR bei etwa einer Kernschmelze in 170.000.000 Betriebsjahren. Spätestens nach den Ereignissen von Tschernobyl und Fukushima legt man großen Wert auf die Freisetzung von Radioaktivität nach dem Versagen aller Sicherheitseinrichtungen (z. B. Beschädigung des Containment etc.). Man kann durch geeignete Maßnahmen auch in einem solchen schweren – und unwahrscheinlichen – Unfall, die Freisetzung von radioaktiven Stoffen erheblich verringern. __Simulationen für Standorte in USA haben ergeben, daß selbst in Betrachtungszeiträumen von einer Milliarde Jahren (berücksichtigt die geringe Wahrscheinlichkeit der Ereignisse) in einer Entfernung von 800 m (!) keine Dosen über 1 Sv auftreten würden__. Natürlich können solche Berechnungen „Atomkraftgegner“ nicht überzeugen. Sie halten auch nach Tschernobyl und Fukushima tapfer an ihrem Glauben von _Millionen-Tote-für-zehntausende-Jahre-unbewohnbar_ fest. Was soll’s, es gibt auch heute noch Menschen, die an Hexen glauben.
+
+
+## Der Naturumlauf
+
+Die Idee einen Siedewasserreaktor ohne Umwälzpumpen zu bauen, ist keinesfalls neu. Allerdings waren die ursprünglichen Modelle, wie z. B. Dodewaard (183 MW<sub>th</sub>) und Humboldt Bay (165 MW<sub>th</sub>) geradezu winzig gegenüber einem ESBWR (4500 MW<sub>th</sub>). Gleichwohl haben sie in den Jahrzehnten ihres Betriebs wertvolle Erkenntnisse und Messreihen geliefert, die als Referenz für die Auslegungsprogramme des ESBWR dienen. Dodewaard war von 1969 bis 1997 am Netz und hat trotz seiner bescheidenen Leistung von 55 MW<sub>el</sub> fast 11000 GWh<sub>el</sub>Strom produziert.
+
+Wenn man einen Reaktor mit Naturumlauf bauen will, muß man die treibende Kraft der Umwälzpumpen durch einen Kamineffekt ersetzen: Es steht nur die Dichtedifferenz zwischen kaltem Abwärtsstrom und dampfhaltigem Aufwärtsstrom zur Verfügung. Um überhaupt genug Druck erzeugen zu können, damit man die Reibung in den Bauteilen überwinden kann, ist eine erhebliche Bauhöhe erforderlich. Genau das war aber in den Anfangsjahren das Problem. Man konnte solch große Druckgefäße – zumindest wirtschaftlich – nicht herstellen. Es bot sich deshalb an, besser Umwälzpumpen zu verwenden. Heute haben sich die Verhältnisse umgekehrt. Es gelang praktisch das im ABWR verwendete Druckgefäß auch im ESBWR zu verwenden. Es mußte allerdings für den Kamin oberhalb des Reaktorkerns, von 21,7 auf 27,6 m verlängert werden. Solch schlanke Behälter haben Vor- und Nachteile. Für die Gebäudehöhe und den Erdbebenschutz ist eine solche Länge eher nachteilig. Allerdings ergibt sich auch ein sehr großes Wasservolumen, was sich positiv bei Störfällen auswirkt.
+
+Der Kern des ESBWR ist gegenüber dem ABWR größer (1590 gegenüber 1350 Brennelemente) und flacher (3,0 m gegenüber 3,7 m aktive Brennstablänge). Dies ist auf die höhere Leistung (4500 gegenüber 3926 MW<sub>th<a id="MMDHTMLSCROLLPOINT"></a>.</sub>) und die anderen thermohydraulischen Bedingungen zurückzuführen. Wegen der höheren Anzahl der Brennelemente erhöht sich auch die Anzahl der Regelstäbe (269 gegenüber 205). Diesem Mehraufwand ist die Einsparung von zehn internen Umwälzpumpen gegen zu rechnen.
+
+
+## Der Rechenaufwand
+
+Einfach anmutende natürliche Systeme, sind meist wesentlich schwieriger zu beschreiben, als technische Systeme. Technische Anlagen, wie z.B. Pumpen, können definierte Randbedingungen schaffen, die eine Berechnung oft stark vereinfachen. Nur auf Naturkräfte beruhende Systeme sind die hohe Schule der Simulation. Schnell stößt man bei der notwendigen räumlichen und zeitlichen Auflösung an die Grenzen heutiger Rechner. Hinzu kommt hier eine sehr große Anzahl von Gleichungen, da die Thermohydraulik und die Neutronenphysik sich sehr stark gegenseitig beeinflussen.
+
+Man muß es eigentlich nicht besonders erwähnen, hier hat man es mit einer Genehmigungsbehörde zu tun und bewegt sich nicht als freischaffender Künstler in der Welt von Klimamodellen oder Wirtschaftsprognosen. Hier muß man nicht nur sein Programm offen legen, sondern auch noch nachweisen, daß es richtig rechnet. Dazu müssen zahlreiche Messreihen an 1:1 Modellen nachgerechnet werden, um Unterprogramme (z. B. Druckverlust in einem Brennelement) zu testen. Ist diese Hürde – zur Zufriedenheit der Genehmigungsbehörde – erfolgreich genommen, geht es daran, Versuche an bereits gebauten Reaktoren nachzurechnen. Erst wenn der Genehmigungsbehörde kein Testfall mehr einfällt, ist das Programm zugelassen. So etwas kann dauern, schließlich arbeitet die Behörde im Stundenlohn für einen Stundensatz von 280 US-Dollar. So viel zum Thema: Junge Unternehmen entwickeln einen innovativen Reaktor. Die alten Zeiten eines Admiral Hyman G. Rickover, für den der Reaktor der USS Nautilus noch mit Rechenschieber, Bleistift und ganz viel Hirn ausgelegt wurde, sind lange vergangen.
+
+Allein die Anpassung des vorhandenen Programms an die Besonderheiten des ESBWR soll bei GE mehr als 100 Mann-Jahre gedauert haben. Erst dann konnten für alle möglichen geforderten Zustände, die Leistungen, Durchflüsse, Dampfzustände und Dampfanteile, Blasenkoeffizienten, die Leistungsdichte und -verteilung, sowie die Stabilität (z.B. Xenon-Schwingungen) nachgewiesen werden.
+
+Führt man sich diesen Aufwand vor Augen, wird einsichtig, warum die Entwicklung evolutionär verläuft. Man hat versucht, soviel wie möglich vom ABWR beim ESBWR weiter zu verwenden. Nicht einmal ein Verbund von internationalen Konzernen aus GE, Hitachi und Toshiba kann es sich heute noch erlauben, die Entwicklung eines kommerziellen Reaktors mit einem weißen Blatt Papier zu beginnen. Ob das nun gut oder eher schlecht ist, mag jeder für sich selbst entscheiden.
+
+
+## Die Notkühlung
+
+Nach dem Unglück in Fukushima sind zwei Ereignisse in den Mittelpunkt der Sicherheitsüberlegungen gerückt:
+
+
+1. __Der Verlust der Hauptwärmesenke__. In Fukushima wurden durch die Flutwelle die Kühlwasserpumpen und Einlaufbauwerke zerstört. Damit ging die Fähigkeit zur Abfuhr der Nachzerfallswärme verloren. Für sich genommen, schon ein wesentlicher Schritt zur Kernschmelze.
+1. __Verlust (nahezu) jeglicher Stromversorgung__. Durch die Schnellabschaltung infolge der Erdstöße war die Eigenversorgung weg, durch die großräumigen Verwüstungen durch die Naturkatastrophe, die Stromversorgung über das Netz und durch die Flutwelle wurden die Schaltanlagen und Notstromdiesel zerstört.
+
+Wie hätte sich nun ein ESBWR in einer solchen Ausnahmesituation verhalten? Er verfügt über eine zusätzliche Wärmesenke für den Notfall, die vollständig unabhängig vom normalen Kühlwassersystem funktioniert: Die Außenluft. Der Auslegungsphilosophie folgend, sich nur auf Naturkräfte zu verlassen, handelt es sich dabei um offene „Schwimmbecken“ oberhalb des Sicherheitsbehälters. Das Volumen ist so bemessen, daß es für mindestens 72 Stunden reicht. Die Temperatur ist – unabhängig von den Umweltbedingungen – durch die Verdampfung auf maximal 100 °C begrenzt. Es kann jederzeit – auch von außen durch die Feuerwehr – aus verschiedenen Tanks nachgefüllt werden.
+
+Das nur mit der Schwerkraft betriebene Notkühlsystem ECCS (Emergency Core Cooling System) besteht aus vier voneinander unabhängigen Zügen. In jeweils einem „Schwimmbecken“ oberhalb des Sicherheitsbehälters befinden sich zwei Kondensatoren. Diese bestehen aus je zwei übereinander angeordneten Sammlern, die durch zahlreiche dünne Rohre verbunden sind. Von dem Reaktordruckgefäß steigt eine Leitung zu den Sammlern auf. Im Kondensator kühlt sich das entweichende Dampf/Wassergemisch ab und strömt über den (kalten) Rücklauf wieder dem Reaktordruckgefäß zu. Es entsteht ein natürlicher Kreislauf, der sich selbst antreibt. Im Normalbetrieb ist die „warme“ Dampfleitung stets offen. Jede „kalte“ Rückleitung ist durch je zwei parallele Ventile verschlossen. Aus Gründen der Diversität ist ein Ventil elektrohydraulisch und das jeweils andere pneumatisch über einen Druckgasspeicher betrieben. Die Ventile befinden sich in einer „fail-safe“ Stellung: Während des Betriebs werden sie durch die Kraft der Hydraulik oder des Gases geschlossen gehalten. Geht der Druck weg – aus welchen Gründen auch immer, gewollt oder nicht – geben die Ventile den Weg frei. Wegen der Redundanz, reicht ein Ventil aus, um den gesamten Strom durchzulassen. Da die Kondensatoren und die Rückleitung vollständig mit „kaltem“ Wasser gefüllt sind, rauscht dieses Wasser infolge der Schwerkraft in den Reaktordruckbehälter und der Kondensator saugt dadurch ein „warmes“ Gas- und Dampfgemisch aus dem Reaktorgefäß nach. Ein Naturumlauf ist entfacht. Dieser läuft solange, wie der Kern Nachzerfallswärme produziert und die Außenluft diese Wärme abnimmt.
+
+Wenn das nukleare System irgendwo ein Leck hat, würde irgendwann der Kern trocken fallen. Das entweichende Wasser muß sofort ersetzt werden. Zu diesem Zweck gibt es innerhalb des Sicherheitsbehälters große Wassertanks. Damit aber das Wasser in freiem Fall nachströmen kann, muß zuerst der Druck im System abgebaut werden. Hierfür gibt es 8 Sicherheitsventile, 10 Abblaseventile (die zeitweilig durch pneumatische Antriebe geöffnet werden können) und 8 Druckentlastungsventile unmittelbar am Reaktordruckgefäß. Letztere enthalten verschweißte Membranen, durch die sie dauerhaft dicht und wartungsfrei sind. Wenn sie öffnen müssen, „durchschneidet“ ein Kolben die Dichtung. Dieser Kolben wird durch Gas, welches pyrotechnisch in einem Gasgenerator erzeugt wird, bewegt. Es ist das gleiche Prinzip, wie bei einem „Airbag“ im Auto – ein sehr kleiner „Signalstrom“ reicht zur Zündung aus und erzeugt über die „Sprengkraft“ eine sehr große Gasmenge. Diese Ventile sind so gebaut, daß sie den Weg vollständig frei geben, nicht verstopfen können und sich nicht wieder schließen lassen.
+
+Der Energieabbau und die Kühlung geschieht in mehreren miteinander verknüpften Schritten:
+
+
+1. Aus den diversen Abblaseventilen strömt (zumindest am Anfang) ein Dampfstrahl mit hoher Energie und Geschwindigkeit. Dieser wird feinverteilt in Wasserbecken eingeblasen. Diese sog. Kondensationskammern befinden sich unten im Sicherheitsbehälter.
+1. Durch die Kondensation fällt der Dampf in sich zusammen und bildet wieder Wasser. Die Verdampfungswärme geht dabei an das Wasser der Kondensationskammer über. Würde man das Wasser nicht kühlen, wäre irgendwann Schluß damit. Der Zeitraum hängt von der Nachzerfallswärme und dem Wasservolumen ab.
+1. Das Wasser in den Kondensationskammern kann auf verschiedenen Wegen gekühlt werden. Der wichtigste Weg ist über die weiter oben beschriebenen Kondensatoren.
+1. Damit der Reaktorkern stets sicher gekühlt ist, sind die Wasservolumina in den Kondensationskammern und Speichern so bemessen, daß der Kern auch dann unter Wasser bleibt, wenn sich das Wasser im Sicherheitsbehälter ausbreitet. Dieser Zustand kann auch absichtlich herbeigeführt werden.
+1. Um eine Kettenreaktion sicher und dauerhaft zu verhindern, wird zusätzlich aus Speichern borhaltiges (Neutronengift) Wasser eingesprüht.
+
+
+## Der „Supergau“
+
+Im Gegensatz zu den Anfängen der Kernkraftwerkstechnik diskutiert man schon heute im Zulassungsverfahren ganz offensiv das Versagen aller Sicherheitseinrichtungen: __Einerseits setzt man sich dabei mit den Auswirkungen der dadurch freigesetzten Radioaktivität auf die Umgebung auseinander und andererseits beschäftigt man sich mit Möglichkeiten diese Auswirkungen trotzdem abzumildern.__
+
+Ein typischer Fall ist das Versagen des Sicherheitsbehälters. Man versucht alles erdenkliche zu tun um dies zu verhindern, beschäftigt sich aber trotzdem mit diesem Ereignis. Ein Schritt diesen Unfall abzumildern, ist die gesteuerte Ableitung über Filter und den Abgaskamin. Durch die Kaminhöhe verdünnt sich die Abgaswolke beträchtlich. Durch das Vorschalten von geeigneten Filtern kann die Schadstoffmenge zusätzlich gemindert werden.
+
+Ähnlich verhält es sich mit dem Kern: Durch redundante, passive Kühlsysteme versucht man den Brennstoff und die Spaltprodukte im Reaktordruckgefäß zu halten. Trotzdem untersucht man auch ein Versagen des Druckbehälters. Wie Fukushima gezeigt hat, ist auch beim Versagen der Notkühlung nicht mit einem „China Syndrom“ (_Hollywood Phantasie, nach der sich der schmelzende Kern immer weiter in den Untergrund frisst_) zu rechnen. Trotzdem geht man von einem Schmelzen des Stahlbehälters wie bei einem Hochofenabstich aus. Die Grube des Reaktorgefässes ist deshalb als „feuerfester Fußboden“ (_BiMAC, Basemat Internal Melt Arrest and Coolability device_) ausgeführt. Unterhalb einer feuerfesten Schicht befindet sich ein Rohrleitungssystem, welches – quasi wie bei einer Fußbodenheizung – diese Schicht kühlt. Dieser „Fußboden“ ist bezüglich seiner Konstruktion und Leistung für den 4-fachen Kerninhalt ausgelegt. Zusätzlich könnte die Grube mit dem im Sicherheitsbehälter vorhandenem Wasser vollständig geflutet werden, um die Spaltprodukte größtenteils darin zurückzuhalten.
+
+
+## Leistungsregelung
+
+Normalerweise geschieht die Leistungsregelung bei Siedewasserreaktoren über die Steuerstäbe und die Umwälzpumpen. Die Steuerstäbe dienen nur zum Anfahren und bis etwa 50% der Auslegungsleistung. Im Bereich oberhalb 60% wird die Leistung nur noch über die Umwälzpumpen durchgeführt. Die Steuerstäbe dienen dann nur noch zur Kompensation des Abbrands.
+
+Beim ESBWR kann der Reaktor durch langsames ziehen der Steuerstäbe auf Temperatur gebracht werden. Da im Siedebereich Temperatur und Druck miteinander gekoppelt sind, steigt auch der Druck im nuklearen System entsprechend an. Würde man keinen Dampf entnehmen, würde der Druck im „Kessel“ immer weiter ansteigen bis die Sicherheitsventile ansprechen. Natürlich wird so bald wie möglich Dampf entnommen, um die Turbine und das gesamte nukleare System damit aufzuwärmen. Wenn man aber Dampf entnimmt, muß die gleiche Menge durch Speisewasser ersetzt werden. Das Speisewasser wird im Betriebszustand auf 216°C vorgewärmt. Dies geschieht in sechs Stufen. Man entnimmt dazu an bestimmten Stellen der Turbine eine gewisse Menge Dampf. Dies ist sinnvoll, da der jeweils entnommene Dampf bereits Arbeit geleistet hat und sich somit der Wirkungsgrad verbessert. Man nennt diese Strategie „Carnotisierung“.
+
+Der ESBWR hat gegenüber einem normalen Siedewasserreaktor (z. B. ABWR) eine siebte Vorwärmstufe, die mit frischem Dampf aus dem Reaktor beheizt wird. Normalerweise wird sie deshalb umgangen. Wenn man beispielsweise mit dieser Stufe die Speisewassertemperatur auf 252°C erhöht, geht die Leistung des Reaktors – bei gleicher Position der Steuerstäbe – auf 85% zurück. Umgekehrt könnte man die Steuerstäbe etwa so weit einfahren, daß nur noch rund 50% der Auslegungsleistung erzeugt wird. Würde man nun die Speisewassertemperatur auf 180°C absenken, würde sich wieder die ursprüngliche Leistung einstellen. __Es ergibt sich somit im Bereich zwischen 50% bis 100% Leistung ein umfangreiches Feld, in dem sich die Leistung durch Kombination von Steuerstabstellungen und Speisewassertemperatur regeln läßt.__
+
+Die physikalische Ursache ist bei allen Siedewasserreaktoren die Abhängigkeit der Abbremsung der Neutronen von der Dichte des Moderators. Bei Reaktoren mit Umwälzpumpen wird die Dichte durch „ausspülen“ von Dampfblasen aus den Brennelementen erhöht, bei Naturumlauf durch das Absenken der mittleren Temperatur.
+
+Wegen seiner Leistung von 1600 MW<sub>el<a id="MMDHTMLSCROLLPOINT"></a>.</sub> dürfte dieser Reaktor eher in der Grundlast eingesetzt werden. Gleichwohl ist ein täglicher Lastfolgebetrieb vorgesehen und genehmigt. So sind z. B. die Steuerstäbe für eine Betriebsdauer von 10 Jahren bei täglichem Lastwechsel zugelassen. Idealerweise fährt man mit diesem Reaktor aber mit konstant volle Leistung. __Wegen seiner Stabilität und seiner passiven Notkühlung ist er sogar für den Betrieb durch nur einen Bediener konstruiert und zugelassen!__
+
+
+## Ausblick
+
+Im nächsten Teil werden die Schwerwasserreaktoren vorgestellt. Es ist bereits beschlossen, einen weiteren solchen Reaktor in Kooperation mit China, in Rumänien zu errichten.
+

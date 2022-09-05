@@ -1,0 +1,4 @@
+title: nukeKlaus.net Nachrichten aus der Kerntechnik
+sort_field: order
+sort_direction: asc
+entry_route: /{slug}

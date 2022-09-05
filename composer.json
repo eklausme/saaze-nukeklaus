@@ -1,0 +1,29 @@
+{
+	"name": "eklausme/saaze-nukeklaus",
+	"description": "A blog-theme for nukeKlaus.net",
+	"type": "project",
+	"license": "MIT",
+	"authors": [
+		{
+			"name": "Elmar Klausmeier",
+			"email": "Elmar.Klausmeier@gmail.com",
+			"homepage": "https://nukeklaus.net"
+		}
+	],
+	"require": {
+		"eklausme/saaze": ">=1.16"
+	},
+	"config": {
+		"optimize-autoloader": true,
+		"preferred-install": "dist",
+		"sort-packages": true,
+		"allow-plugins": {
+			"composer/package-versions-deprecated": true
+		}
+	},
+	"prefer-stable": true,
+	"require-dev": {
+		"phpstan/phpstan": "^1.1",
+		"vimeo/psalm": "^4.16"
+	}
+}

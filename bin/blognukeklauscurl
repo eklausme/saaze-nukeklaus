@@ -1,0 +1,26 @@
+#!/bin/perl -W
+# Fetch posts from nukeklaus.net via curl
+# Read list of all posts from sitemap.xml
+# Sitemaps are here:
+#	http://www.nukeklaus.net/wp-sitemap-posts-post-1.xml
+#	http://www.nukeklaus.net/wp-sitemap-posts-page-1.xml
+#	http://www.nukeklaus.net/wp-sitemap-taxonomies-category-1.xml
+#	http://www.nukeklaus.net/wp-sitemap-taxonomies-post_tag-1.xml
+#	http://www.nukeklaus.net/wp-sitemap-users-1.xml
+# Elmar Klausmeier, 17-Jul-2022
+
+use strict;
+my ($url,$fn) = ("","");
+
+while (<>) {
+	while (/<url><loc>(.+?)adminklaus\/<\/loc><\/url>/g) {
+		$url = $1;
+		if ($url =~ /www\.nukeklaus\.net\/(.+)\/$/) {
+			$fn = $1 . ".html";
+			$fn =~ s/\//-/g;
+		}
+		print "curl $url -o $fn\n";
+		`curl $url -o $fn`;
+	}
+}
+
