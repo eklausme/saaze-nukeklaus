@@ -593,6 +593,11 @@
                 "\/2022-08-19-uebergewinn-fuer-wen",
                 "2022-08-19 12:00:00",
                 "\u00dcbergewinn, f\u00fcr wen?"
+            ],
+            [
+                "\/2022-09-04-kleinreaktoren-in-mikronetzen",
+                "2022-09-04 12:00:00",
+                "Kleinreaktoren in Mikronetzen"
             ]
         ],
         "Hochtemperaturreaktoren": [
@@ -704,6 +709,11 @@
                 "\/2022-06-21-was-ist-los-in-daenemark",
                 "2022-06-21 12:00:00",
                 "Was ist los in D\u00e4nemark?"
+            ],
+            [
+                "\/2022-09-04-kleinreaktoren-in-mikronetzen",
+                "2022-09-04 12:00:00",
+                "Kleinreaktoren in Mikronetzen"
             ]
         ],
         "Netze": [
@@ -796,6 +806,11 @@
                 "\/2022-07-29-umruesten-von-kohlekraftwerken-moeglich",
                 "2022-07-29 12:00:00",
                 "Umr\u00fcsten von Kohlekraftwerken m\u00f6glich?"
+            ],
+            [
+                "\/2022-09-04-kleinreaktoren-in-mikronetzen",
+                "2022-09-04 12:00:00",
+                "Kleinreaktoren in Mikronetzen"
             ]
         ],
         "Neubau-und-abgaenge": [
@@ -1005,6 +1020,11 @@
                 "\/2022-08-19-uebergewinn-fuer-wen",
                 "2022-08-19 12:00:00",
                 "\u00dcbergewinn, f\u00fcr wen?"
+            ],
+            [
+                "\/2022-09-04-kleinreaktoren-in-mikronetzen",
+                "2022-09-04 12:00:00",
+                "Kleinreaktoren in Mikronetzen"
             ]
         ],
         "Reaktortypen": [
@@ -1179,6 +1199,11 @@
                 "\/2021-06-13-flugscharen-zu-schwertern",
                 "2021-06-13 12:00:00",
                 "Flugscharen zu Schwertern?"
+            ],
+            [
+                "\/2022-09-04-kleinreaktoren-in-mikronetzen",
+                "2022-09-04 12:00:00",
+                "Kleinreaktoren in Mikronetzen"
             ]
         ],
         "Salzschmelze": [
@@ -6953,6 +6978,13 @@
                 "\/2014-02-18-fukushima-zweite-begutachtung-durch-iaea",
                 "2014-02-18 12:00:00",
                 "Fukushima \u2013 Zweite Begutachtung durch IAEA"
+            ]
+        ],
+        "Microgrid": [
+            [
+                "\/2022-09-04-kleinreaktoren-in-mikronetzen",
+                "2022-09-04 12:00:00",
+                "Kleinreaktoren in Mikronetzen"
             ]
         ],
         "Militaerische-reaktoren": [
