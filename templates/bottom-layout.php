@@ -1,8 +1,12 @@
 
 	<footer>
-		<p class=dimmedColorSansSerif><br>Generiert <?= date_format(date_create('now',new \DateTimeZone('Europe/Berlin')),'d-M-y H:i') ?> mit
-			<a href="https://eklausmeier.goip.de/blog/2021/10-31-simplified-saaze">Simplified Saaze</a>,
-			Web-Server <a href="https://hiawatha-webserver.org">Hiawatha</a> &nbsp;
+	<p class=dimmedColorSansSerif><br><?php
+			printf("Generiert %s CET (Europa/Berlin) durch <a href=\"%s\">Simplified Saaze</a>%s%s \n",
+				date('d-M-y H:i'), 'https://jamstack.org/generators/simplified-saaze',
+				getenv('NON_NGINX') ? '' : ', Web-Server <a href="https://nginx.org">NGINX</a>',
+				isset($_SERVER['REQUEST_TIME_FLOAT']) ? sprintf(", rendered in %.2f ms",1000 * (microtime(true) - $_SERVER['REQUEST_TIME_FLOAT'])) : ''
+			);
+			?>
 			<a href="<?= $rbase ?>/sitemap.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAACXBIWXMAAA7EAAAOxAGVKw4bAAABXElEQVRYw+3XPUgcURSG4Se6BhFCBEGIvZaCRZpEQbCwstJGmyjY2UhKC60SAgYrCwutBEt/ChcbC1ER0qRJIXYWtpqABFZ3Y5obmGKWzMy6s8L6wWnuzJzvnftzOJdm14sq4614g5aMeW9xnRWqBxf4U0OUsZTErBAz9iHMTD8qGX9iFF/wKcCkAujAFX7UsLRdeBkiNUCuqjfAGEr4jstGAGxETtIwvuUN0I3fOMV4IwD+6RfamnITPgM0B0BrKLlRtecFMIk1vIp5VsF9vQGWQ7Xbjoy9w2es5wHwGsc4iZgvYAtzeW/C9yhiD9OhMckNYBD72MVMUvPHAhjCLHbSmlcDuEEvJv7XzYQjOI/NLObV1IlD3AWAcjhSpdDtRuMaXxN0z0WsJJ2BnxiJSXCOj42qhA817pdCteVJmvQIixjIYN6Ct1hNczOKe28KfSm+ic7eGQ486ynqL0FCUbvgKUTtAAAAAElFTkSuQmCC" height=32 width=32 alt=Sitemap></a>
 			<a href="<?= $rbase ?>/feed.xml"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAD50lEQVR42u2XW2wUZRTH/zOzs5dpC2yFhFJoKSVqagWBQkIoWEIMEiOmJpAIaqKiD5SEy4skEHiAhAcuIn2BAFICSEwwgoXIg4m1xEZRrEptaW1ppaXlfmu7c9v9hjOU7uzHDEuhTfvCedrvzPm++c25/GdW6PxhDhPIMARmkQldp1+3huLmvfYcwAUQmLwFYjgPMO/B0m+AdbeBdf6H2O3zYF3NGOhucQEEp+2ENPI1z2AWuYLolQpE207BUlsHH6DXqHkRu1YFo/ErWF1Ngw/ggDBEW0/CaNgDxLoHBsCX/R7EtAkQ/CMgKmMgKBlUdzHpIUy9Cv3vTWB3a/oP4DIpBVJ4EqRRs+DLKIIgp3png5kwancherl8gAESTQzCl7kA8oSl9HOkZ4jRcADGxTL0VVyfTQcIRM79CHLOIs/y2BBm88FnA/Dnr4eYmk0acJPmvgWM5j926w8qtO7mCE8h3dgAMRDm/PaUGDXbEG0/9fQAXlNgRVU67Ed6qqOwtHb+gOBo2rOVoMfxe6gntN9Wgt2r7T9A4qFm8zcwmyi9lulckMMIzSgliLFcPIt0QK36hEY0MjAAvRa7Uw/9r/VUpusJmchAaOZuGt/hXKzZ8h2M+i/7DiDnLoOUPhliShaEwPDHbmTqdWi/ryZJbov7xPQCBAu2chNgsRhlYRms7ua+AcQ3kldMy4VvzHzIY9+i+U/xgLhGdS7hMuF/aSXk8cVcXLTjZ+j/bHw6AM58w+jgEgKZ71GOC9DOrrA7tcdBwhWafZibDFuy1cr3XQ3cd4Bejsy34c9bBUGUOL/ReIgac78Tl70YgZeX8zFNh2E27usfQA/EQgTy13A+ezrUMx/SE3b0OEQFStExKpvilKu7HZEzS1zfE94AYoC0v/BBR7M7/9IHST132f/KWirHm5zPvFQOo2570phIJUGql54A4E9HaPpOmumsh/WzKHVlMC8mSKsvDcrsrwkwzclCVEPkp2K7Mx+s7QcITt3MHa3b6nj5ZHIAf/46yJlv8CkmCO3X5aRqdXGfPPFT+HOXcnFa9Qb6UKnsWUipUOaVcyNp/n8CxoUvkgOE5hyDGHK/6YyGvaSCR5yNKeOhFJbxZWj5lkSn1Dmr8CjpSUZ8HbvxJ7RzfP+4lXDmAUjDclwAes0OSt/3CVkBlLnHqV1GJNygmm6wOr4OTN0G36iC+Jp1tUL95YPkAF5dbqueWvUxKUon5w9OLyXVfPWxN3i0nEy/C7XineQAdr3lrHfpXU8jQ2LCbp2HXrudk9x4H7xYAumFKc5e7Sb06s+d6yTrvtFFznUzQqL1WXKAwbbnAMIQ/z3HfQ7n42k1VPCfAAAAAElFTkSuQmCC" height=32 width=32 alt="RSS Feed"></a>
 		<br></p>
